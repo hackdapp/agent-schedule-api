@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1421400965288
+Build-Jdk: 1.7.0_45
+Built-By: nolan
+Bundle-Description: This bundle provides an implementation of the AgentS
+ chedule.
+Bundle-ManifestVersion: 2
+Bundle-Name: agent-schedule-api
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-SymbolicName: com.cloudwise.smartagent.agent-schedule-api
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.cloudwise.smartagent.schedule;version="0.0.1.SNAPSHO
+ T"
+Tool: Bnd-1.50.0
