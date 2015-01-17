@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1421400965288
-Build-Jdk: 1.7.0_45
-Built-By: nolan
+Bnd-LastModified: 1421467314305
+Build-Jdk: 1.7.0_71
+Built-By: Life2014
 Bundle-Description: This bundle provides an implementation of the AgentS
  chedule.
 Bundle-ManifestVersion: 2

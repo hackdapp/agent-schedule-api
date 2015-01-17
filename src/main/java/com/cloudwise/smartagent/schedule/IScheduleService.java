@@ -2,62 +2,69 @@ package com.cloudwise.smartagent.schedule;
 
 import java.util.Map;
 
+/**
+ * ScheduleServiceAPI
+ * 
+ * @author nolan
+ * 
+ */
 public interface IScheduleService {
+
 	/**
-	 * @param scheduleId
+	 * @param id
 	 * @return
 	 * @see
 	 */
-	public boolean exist(String scheduleId);
+	public boolean exist(String id);
 
 	/**
 	 * add the schedule
 	 * 
-	 * @param scheduleId
+	 * @param id
 	 * @param name
-	 * @param cronExp
+	 * @param expression
 	 * @param event
 	 * @param param
 	 * @see
 	 */
-	public void addSchedule(String scheduleId, String name, String cronExp,
-			IScheduleEvent event, Map param);
+	public void addSchedule(String id, String name, String expression,
+			IScheduleEvent event, Map<String, ?> param);
 
 	/**
 	 * update the schedule's define
 	 * 
-	 * @param scheduleId
+	 * @param id
 	 * @param name
-	 * @param cronExp
+	 * @param expression
 	 * @param event
 	 * @param param
 	 * @see
 	 */
-	public void updateSchedule(String scheduleId, String name, String cronExp,
+	public void updateSchedule(String id, String name, String expression,
 			IScheduleEvent event, Map<String, ?> param);
 
 	/**
 	 * delete the schedule
 	 * 
-	 * @param scheduleId
+	 * @param id
 	 * @see
 	 */
-	public void deleteSchedule(String scheduleId);
+	public void deleteSchedule(String id);
 
 	/**
 	 * run now
 	 * 
-	 * @param scheduleId
-	 *            scheduleId
+	 * @param id
+	 *            id
 	 * @param name
 	 *            scheduleName
-	 * @param cronExp
+	 * @param expression
 	 *            the cron expression
 	 * @param event
 	 *            scheduleEvent
 	 * @param param
 	 * @see
 	 */
-	public void runNow(String scheduleId, String name, String cronExp,
-			IScheduleEvent event, Map param);
+	public void runNow(String id, String name, String expression,
+			IScheduleEvent event, Map<String, ?> param);
 }
