@@ -1,7 +1,11 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: agent-schedule-api
-Bundle-SymbolicName: com.cloudwise.smartagent.schedule.api
+Bundle-Name: Agent-plugin-api
+Bundle-SymbolicName: agent-plugin-api
 Bundle-Version: 1.0.0.qualifier
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
-Export-Package: com.cloudwise.smartagent.schedule
+Export-Package: com.cloudwise.smartagent.plugin.api,
+ com.cloudwise.smartagent.plugin.api.exception,
+ com.cloudwise.smartagent.plugin.api.model
+Bundle-ClassPath: lib/jackson-annotations-2.4.0.jar,
+ .
